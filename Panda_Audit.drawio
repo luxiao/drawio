@@ -1,1 +1,125 @@
-<mxfile host="app.diagrams.net" modified="2022-05-09T06:58:08.489Z" agent="5.0 (Macintosh)" version="18.0.2" etag="npyjDz3bu-5METIaMai3" type="github"><diagram id="eKe6SYgErKLxVpMC9e1l">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-12T02:46:30.533Z" agent="5.0 (Macintosh)" etag="9uqCM4SbaAEgrOH_tp8v" version="18.0.3" type="github">
+  <diagram id="eKe6SYgErKLxVpMC9e1l" name="Page-1">
+    <mxGraphModel dx="786" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-1" target="LnGCz8AqGLeLfWRywy7V-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-7" value="原始日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-6">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="85" y="55" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-2" value="流量抓取程序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="92.5" y="120" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-3" value="DB或App服务器" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-5" target="LnGCz8AqGLeLfWRywy7V-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-11" value="丰富后的日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-9">
+          <mxGeometry x="-0.2222" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-5" value="日志采集服务器" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-8" target="LnGCz8AqGLeLfWRywy7V-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-18" value="单条日志消费" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-17">
+          <mxGeometry x="-0.4727" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-8" value="消息队列" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-15" value="审计规则存储" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-13" target="LnGCz8AqGLeLfWRywy7V-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="270" />
+              <mxPoint x="270" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-13" target="LnGCz8AqGLeLfWRywy7V-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-21" value="审计规则下发" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-20">
+          <mxGeometry x="0.0609" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-13" value="审计控制台" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-14" value="审计规则和日志存储" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="110" y="230" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-19" target="LnGCz8AqGLeLfWRywy7V-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-19" value="日志过滤器" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-22" target="LnGCz8AqGLeLfWRywy7V-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-30" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-29">
+          <mxGeometry x="0.32" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-22" target="LnGCz8AqGLeLfWRywy7V-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-32" value="日志存储，如果有命中规则，附加规则和告警信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-31">
+          <mxGeometry x="-0.2069" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-33" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="LnGCz8AqGLeLfWRywy7V-31">
+          <mxGeometry x="-0.7448" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-22" value="审计规则" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-28" value="结束" style="shape=ellipse;html=1;dashed=0;whitespace=wrap;aspect=fixed;strokeWidth=5;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry x="630" y="480" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-35" value="目标数据库" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="220" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-36" target="LnGCz8AqGLeLfWRywy7V-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-36" value="访问者" style="image;html=1;image=img/lib/clip_art/computers/Laptop_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-39" target="LnGCz8AqGLeLfWRywy7V-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-39" value="业务服务器" style="image;html=1;image=img/lib/clip_art/computers/Server_Tower_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="220" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LnGCz8AqGLeLfWRywy7V-40" target="LnGCz8AqGLeLfWRywy7V-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LnGCz8AqGLeLfWRywy7V-40" value="访问者" style="image;html=1;image=img/lib/clip_art/computers/MacBook_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
