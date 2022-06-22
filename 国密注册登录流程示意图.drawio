@@ -1,1 +1,152 @@
-<mxfile host="app.diagrams.net" modified="2022-06-22T06:49:27.828Z" agent="5.0 (Macintosh)" version="20.0.2" etag="Ttcg5Se3vQp8z-dJha5r" type="github"><diagram id="tdGtv8VQD4flg7esiemw">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-22T09:02:36.484Z" agent="5.0 (Macintosh)" etag="tEZVVvcmpLoUiDeolg3z" version="20.0.2" type="github">
+  <diagram id="tdGtv8VQD4flg7esiemw" name="Page-1">
+    <mxGraphModel dx="786" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y88XyARxFuDvxsY7G9My-6" value="&lt;h1&gt;注册流程&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1. 用户提交注册信息（用户名和密码），前端对密码进行加盐哈希SM3(prefix+username+password)&lt;/p&gt;&lt;p&gt;2. 后端对加盐哈希后的密码调用加密机进行SM2加密得到密文，把用户名和该密文存储在系统内&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-7" value="&lt;h1&gt;登录流程&lt;/h1&gt;&lt;p&gt;1. 用户提交登录信息，用户名和密码，前端依然对密码进行加盐哈希后传输&lt;/p&gt;&lt;p&gt;2. 后端根据用户名查找到存储的SM2密文，调用加密机SM2解密&lt;/p&gt;&lt;p&gt;3. 后端通过比对SM2解密后的明文和用户传入的加盐哈希后的密码是否一致&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="460" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-47" target="y88XyARxFuDvxsY7G9My-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.0588235294117" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-27" value="name,sm3_pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-26">
+          <mxGeometry x="-0.2612" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-19" value="&lt;div&gt;DB&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-20" target="y88XyARxFuDvxsY7G9My-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.0588235294117" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-22" value="name, pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-21">
+          <mxGeometry x="-0.1615" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-20" value="注册开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-48" target="y88XyARxFuDvxsY7G9My-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-30" value="name,sm2_cipher" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-29">
+          <mxGeometry x="-0.0118" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-36" target="y88XyARxFuDvxsY7G9My-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-39" value="name, pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-38">
+          <mxGeometry x="-0.6118" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-36" value="登录开始" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="480" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-37" target="y88XyARxFuDvxsY7G9My-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-42" value="name, sm3_pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-41">
+          <mxGeometry x="-0.4294" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-37" value="&lt;div&gt;前端对密码进行加盐SM3哈希&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="90" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-40" target="y88XyARxFuDvxsY7G9My-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-58" value="sm2_cipher" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-56">
+          <mxGeometry x="0.0963" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-40" target="y88XyARxFuDvxsY7G9My-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-68" value="比对解密后的sm3_pw和前端传入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-66">
+          <mxGeometry x="-0.3546" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-40" value="后端通过用户名获取密码，传入加密机进行SM2解密" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="90" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-47" value="&lt;div&gt;前端对密码进行加盐SM3哈希&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-48" target="y88XyARxFuDvxsY7G9My-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-51" value="sm3_pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-48" value="后端把密码传入加密机进行SM2加密" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="90" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-49" target="y88XyARxFuDvxsY7G9My-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-53" value="sm2_cipher" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-52">
+          <mxGeometry x="-0.1008" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-49" value="支持国密算法SM2加密机" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-55" target="y88XyARxFuDvxsY7G9My-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-59" value="sm3_pw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-57">
+          <mxGeometry x="-0.0321" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-55" value="支持国密算法SM2加密机" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-65" target="y88XyARxFuDvxsY7G9My-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-71" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-70">
+          <mxGeometry x="-0.4024" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="y88XyARxFuDvxsY7G9My-65" target="y88XyARxFuDvxsY7G9My-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-79" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;" vertex="1" connectable="0" parent="y88XyARxFuDvxsY7G9My-78">
+          <mxGeometry x="-0.3193" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-65" value="是否一致" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;rounded=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="110" y="810" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-69" value="登录成功" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="940" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y88XyARxFuDvxsY7G9My-77" value="登录失败" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;rounded=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="820" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
