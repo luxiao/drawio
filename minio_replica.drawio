@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T11:20:15.040Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0" version="21.2.9" etag="KUGyeozvpFNR2dwkmQxT" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-16T02:04:11.521Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/113.0" etag="tWIrS5wVrEQN2tWj_Vqa" version="21.2.9" type="github">
   <diagram name="第 1 页" id="Cpr_CrSqc0OtEqs-9Lw1">
-    <mxGraphModel>
+    <mxGraphModel dx="658" dy="406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="EwrYYi56egPwJhbHhDXz-1" value="Site: ShangHai" style="swimlane;startSize=20;horizontal=1;childLayout=treeLayout;horizontalTree=0;resizable=0;containerType=tree;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="210" y="110" width="420" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-2" value="Nginx/HAProxy" style="whiteSpace=wrap;html=1;points=[[0,0,0,0,0],[0,0.25,0,0,0],[0,0.5,0,0,0],[0,0.75,0,0,0],[0,1,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[1,0,0,0,0],[1,0.25,0,0,0],[1,0.5,0,0,0],[1,0.75,0,0,0],[1,1,0,0,0]];" vertex="1" parent="EwrYYi56egPwJhbHhDXz-1">
+          <mxGeometry x="160" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-3" value="Minio 2" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwrYYi56egPwJhbHhDXz-1">
+          <mxGeometry x="160" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" parent="EwrYYi56egPwJhbHhDXz-1" source="EwrYYi56egPwJhbHhDXz-2" target="EwrYYi56egPwJhbHhDXz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-5" value="Minio 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="EwrYYi56egPwJhbHhDXz-1">
+          <mxGeometry x="20" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-6" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" parent="EwrYYi56egPwJhbHhDXz-1" source="EwrYYi56egPwJhbHhDXz-2" target="EwrYYi56egPwJhbHhDXz-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-27" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;" edge="1" source="EwrYYi56egPwJhbHhDXz-2" target="EwrYYi56egPwJhbHhDXz-28" parent="EwrYYi56egPwJhbHhDXz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrYYi56egPwJhbHhDXz-28" value="Minio 3" style="whiteSpace=wrap;html=1;points=[[0,0,0,0,0],[0,0.25,0,0,0],[0,0.5,0,0,0],[0,0.75,0,0,0],[0,1,0,0,0],[0.25,0,0,0,0],[0.25,1,0,0,0],[0.5,0,0,0,0],[0.5,1,0,0,0],[0.75,0,0,0,0],[0.75,1,0,0,0],[1,0,0,0,0],[1,0.25,0,0,0],[1,0.5,0,0,0],[1,0.75,0,0,0],[1,1,0,0,0]];" vertex="1" parent="EwrYYi56egPwJhbHhDXz-1">
+          <mxGeometry x="300" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
